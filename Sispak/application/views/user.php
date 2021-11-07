@@ -62,19 +62,19 @@ http://www.tooplate.com/view/2102-constructive
 							<li>
 								<a href="#products" id="tmNavLink2" class="scrolly" data-bg-img="constructive_bg_02.jpg" data-page="#tm-section-2" data-page-type="carousel">
 									<i class="fas fa-map tm-nav-fa-icon"></i>
-									<span>Our Products</span>
+									<span>User Data</span>
 								</a>
 							</li>							
 							<li>
 								<a href="#company" class="scrolly" data-bg-img="constructive_bg_03.jpg" data-page="#tm-section-3">
 									<i class="fas fa-users tm-nav-fa-icon"></i>
-									<span>Our Company</span>
+									<span>Hasil Pemeriksaan</span>
 								</a>
 							</li>
 							<li>
 								<a href="#contact" class="scrolly" data-bg-img="constructive_bg_04.jpg" data-page="#tm-section-4">
 									<i class="fas fa-comments tm-nav-fa-icon"></i>
-									<span>FeedBack</span>
+									<span>Feedback</span>
 								</a>
 							</li>
 						</ul>

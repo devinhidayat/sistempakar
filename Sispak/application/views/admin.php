@@ -184,26 +184,20 @@
                 <i class="fa fa-dashboard"></i> <span>Dashboard</span>
               </a>
             </li>
-            <li class="treeview">
-              <a href="#">
-                <i class="fa fa-files-o"></i>
-                <span>Layout Options</span>
-              </a>
-            </li>
             <li>
-              <a href="<?php echo base_url('assets/assets_admin/') ?>pages/widgets.html">
-                <i class="fa fa-th"></i> <span>Widgets</span>
+              <a href="#">
+                <i class="fa fa-user"></i> <span>Data Customer</span>
               </a>
             </li>
             <li class="treeview">
               <a href="#">
-                <i class="fa fa-pie-chart"></i>
-                <span>Charts</span>
+                <i class="fa fa-comments-o"></i>
+                <span>Feedback</span>
               </a>
             </li>
             <li class="treeview">
               <a href="#">
-                <i class="fa fa-laptop"></i>
+                <i class="fa fa-sign-out"></i>
                 <span>Log Out</span>
               </a>
               <ul class="treeview-menu">
