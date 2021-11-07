@@ -85,17 +85,17 @@ http://www.tooplate.com/view/2102-constructive
 			<div class="col-xl-9 col-lg-8 col-md-12 col-sm-12 tm-content">
 
 					<!-- section 1 -->
-					<!-- <section id="tm-section-1" class="tm-section"> -->
-						<!-- <div class="ml-auto">
+					<section id="tm-section-1" class="tm-section">
+						<div class="ml-auto">
 							<header class="mb-4"><h1 class="tm-text-shadow">Constructive Design</h1></header>
 							<p class="mb-5 tm-font-big">Aenean fermentum vestibulum ipsum, ut pretium erat sodales sodales. Pellentesque quis orci vitae dui commodo sodales et ut quam. Etiam vitae egestas purus, ut malesuada enim.</p>
-							<a href="#" class="btn tm-btn tm-font-big" data-nav-link="#tmNavLink2">Continue...</a>  -->
+							<a href="#" class="btn tm-btn tm-font-big" data-nav-link="#tmNavLink2">Continue...</a> 
 							<!-- data-nav-link holds the ID of nav item, which means this link should behave the same as that nav item  -->
-						<!-- </div>
-					</section> -->
+						</div>
+					</section>
 
 					<!-- section 2 -->
-					<!-- <section id="tm-section-2" class="tm-section tm-section-carousel">
+					<section id="tm-section-2" class="tm-section tm-section-carousel">
 						<div>
 							<header class="mb-4"><h2 class="tm-text-shadow">Our Products</h2></header>		            
 							<div class="tm-img-container">
@@ -109,10 +109,10 @@ http://www.tooplate.com/view/2102-constructive
 								</div>
 							</div>		            		          
 						</div>       		          	
-					</section> -->
+					</section>
 
 					<!-- section 3 -->
-					<!-- <section id="tm-section-3" class="tm-section">						
+					<section id="tm-section-3" class="tm-section">						
 						<div class="row mb-4">
 							<header class="col-xl-12"><h2 class="tm-text-shadow">Our Company</h2></header>		
 						</div>
@@ -154,10 +154,10 @@ http://www.tooplate.com/view/2102-constructive
 								</div>
 							</div>			          		
 						</div>						               
-					</section> -->
+					</section>
 
 					<!-- section 4 -->
-					<!-- <section id="tm-section-4" class="tm-section">
+					<section id="tm-section-4" class="tm-section">
 						<div class="tm-bg-transparent-black tm-contact-box-pad">
 							<div class="row mb-4">
 								<div class="col-sm-12">
@@ -194,7 +194,7 @@ http://www.tooplate.com/view/2102-constructive
 								</div>
 							</div>
 						</div>
-					</section>					 -->
+					</section>					
 				</div>	<!-- .tm-content -->							
 				<footer class="footer-link">
 					<p class="tm-copyright-text">Copyright &copy; 2018 Constructive Co. Ltd. 
