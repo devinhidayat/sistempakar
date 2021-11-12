@@ -56,7 +56,7 @@ http://www.tooplate.com/view/2102-constructive
 							<li>
 								<a href="#intro" id="tmNavLink1" class="scrolly active" data-bg-img="constructive_bg_01.jpg" data-page="#tm-section-1">
 									<i class="fas fa-home tm-nav-fa-icon"></i>
-									<span>Introduction</span>
+									<span>Home</span>
 								</a>
 							</li>
 							<li>
@@ -87,9 +87,35 @@ http://www.tooplate.com/view/2102-constructive
 					<!-- section 1 -->
 					<section id="tm-section-1" class="tm-section">
 						<div class="ml-auto">
-							<header class="mb-4"><h1 class="tm-text-shadow">Constructive Design</h1></header>
-							<p class="mb-5 tm-font-big">Aenean fermentum vestibulum ipsum, ut pretium erat sodales sodales. Pellentesque quis orci vitae dui commodo sodales et ut quam. Etiam vitae egestas purus, ut malesuada enim.</p>
-							<a href="#" class="btn tm-btn tm-font-big" data-nav-link="#tmNavLink2">Continue...</a> 
+							<header class="mb-4"><h1 class="tm-text-shadow">Diabetes</h1></header>
+							<p class="tm-font-big">Jenis-jenis Diabetes: </p>
+							<div class="row">
+								<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
+									<div class="media tm-bg-transparent-black tm-border-white">
+										<div class="media-body">
+											<h3>Diabetes Tipe 1</h3>
+											<p style="text-align: justify">penyakit gangguan metabolik yang ditandai oleh adanya kenaikan kadar gula darah akibat kerusakan pada sel beta pankreas yang menyebabkan produksi insulin tidak ada sama sekali.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
+									<div class="media tm-bg-transparent-black tm-border-white">
+										<div class="media-body">
+											<h3>Diabetes Tipe 2</h3>
+											<p style="text-align: justify">penyakit gangguan metabolik yang ditandai oleh kenaikan kadar gula darah akibat penurunan sekresi insulin oleh sel beta pankreas dan atau fungsi insulin (resistensi insulin).</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
+									<div class="media tm-bg-transparent-black tm-border-white">
+										<div class="media-body">
+											<h3>Diabetes Gestasional</h3>
+											<p style="text-align: justify">penyakit gangguan metabolik yang ditandai oleh kenaikan kadar gula darah yang terjadi pada wanita hamil, biasanya terjadi pada usia 24 minggu masa kehamilan, dan setelah melahirkan maka kadar gula darah akan kembali normal.</p>
+										</div>
+									</div>
+								</div>	          		
+							</div>
+							<a href="#" class="btn tm-btn tm-font-big" data-nav-link="#tmNavLink2">Cek Diabetes</a> 
 							<!-- data-nav-link holds the ID of nav item, which means this link should behave the same as that nav item  -->
 						</div>
 					</section>
@@ -197,9 +223,6 @@ http://www.tooplate.com/view/2102-constructive
 					</section>					
 				</div>	<!-- .tm-content -->							
 				<footer class="footer-link">
-					<p class="tm-copyright-text">Copyright &copy; 2018 Constructive Co. Ltd. 
-                    
-                    - Design: Tooplate</p>
 				</footer>
 			</div>	<!-- row -->			
 		</div>
