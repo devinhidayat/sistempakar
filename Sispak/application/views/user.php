@@ -123,16 +123,52 @@ http://www.tooplate.com/view/2102-constructive
 					<!-- section 2 -->
 					<section id="tm-section-2" class="tm-section tm-section-carousel">
 						<div>
-							<header class="mb-4"><h2 class="tm-text-shadow">Our Products</h2></header>		            
+							<header class="mb-4"><h2 class="tm-text-shadow">User Data</h2></header>		            
 							<div class="tm-img-container">
-								<div class="tm-img-slider">
-									<a href="<?php echo base_url('assets/assets_user/') ?>img/gallery-img-01.jpg" class="tm-slider-img"><img src="<?php echo base_url('assets/assets_user/') ?>img/gallery-img-01-tn.jpg" alt="Image" class="img-fluid"></a>
-									<a href="<?php echo base_url('assets/assets_user/') ?>img/gallery-img-02.jpg" class="tm-slider-img"><img src="<?php echo base_url('assets/assets_user/') ?>img/gallery-img-02-tn.jpg" alt="Image" class="img-fluid"></a>
-									<a href="<?php echo base_url('assets/assets_user/') ?>img/gallery-img-03.jpg" class="tm-slider-img"><img src="<?php echo base_url('assets/assets_user/') ?>img/gallery-img-03-tn.jpg" alt="Image" class="img-fluid"></a>
-									<a href="<?php echo base_url('assets/assets_user/') ?>img/gallery-img-04.jpg" class="tm-slider-img"><img src="<?php echo base_url('assets/assets_user/') ?>img/gallery-img-04-tn.jpg" alt="Image" class="img-fluid"></a>
-									<a href="<?php echo base_url('assets/assets_user/') ?>img/gallery-img-05.jpg" class="tm-slider-img"><img src="<?php echo base_url('assets/assets_user/') ?>img/gallery-img-05-tn.jpg" alt="Image" class="img-fluid"></a>
-									<a href="<?php echo base_url('assets/assets_user/') ?>img/gallery-img-06.jpg" class="tm-slider-img"><img src="<?php echo base_url('assets/assets_user/') ?>img/gallery-img-06-tn.jpg" alt="Image" class="img-fluid"></a>
-								</div>
+								<form method="POST" action="" enctype="multipart/form-data">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<label>Umur</label>
+												<input type="number" name="umur" min="1" class="form-control" required>
+											</div>
+											<div class="form-group">
+												<label>Jenis Kelamin: </label>
+												<select name="gender" class="form-control" style="color: white" required>
+													<option value selected ></option>
+													<option value="Laki-laki">Laki-laki</option>
+													<option value="Perempuan">Perempuan</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<label>Riwayat Diabetes Melitus Tipe 1</label>
+												<select name="riwayat_dm1" class="form-control" style="color: white" required>
+													<option value selected ></option>
+													<option value="Ada">Ada</option>
+													<option value="Tidak">Tidak</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<label>Riwayat Diabetes Melitus Tipe 2</label>
+												<select name="riwayat_dm2" class="form-control" style="color: white" required>
+													<option value selected ></option>
+													<option value="Ada">Ada</option>
+													<option value="Tidak">Tidak</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<label>Gejala</label><br>
+												<input type="checkbox" name="gejala[]" value="1"> 1<br>
+												<input type="checkbox" name="gejala[]" value="2"> 2<br>
+												<input type="checkbox" name="gejala[]" value="3"> 3<br>
+												<input type="checkbox" name="gejala[]" value="4"> 4<br>
+												<input type="checkbox" name="gejala[]" value="5"> 5<br>
+											</div>
+										</div>
+									</div>
+									<button type="submit" class="btn btn-primary">Simpan</button>
+									<button type="reset" class="btn btn-danger">Reset</button>
+								</form>
 							</div>		            		          
 						</div>       		          	
 					</section>
