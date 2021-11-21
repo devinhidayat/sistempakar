@@ -144,14 +144,6 @@ http://www.tooplate.com/view/2102-constructive
 												<label>Berat Badan (kg)</label><br>
 												<input type="number" name="berat" min="0" required>
 											</div>
-											<div class="form-group">
-												<label>Gejala</label><br>
-												<input type="checkbox" name="gejala[]" value="1"> 1<br>
-												<input type="checkbox" name="gejala[]" value="2"> 2<br>
-												<input type="checkbox" name="gejala[]" value="3"> 3<br>
-												<input type="checkbox" name="gejala[]" value="4"> 4<br>
-												<input type="checkbox" name="gejala[]" value="5"> 5<br>
-											</div>
 										</div>
 										<div class="col-md-6">
 											<div class="form-group">
@@ -177,6 +169,12 @@ http://www.tooplate.com/view/2102-constructive
 													<option value="Ada">Ada</option>
 													<option value="Tidak">Tidak</option>
 												</select>
+											</div>
+											<div class="form-group">
+												<label>Gejala</label><br>
+												<input type="checkbox" name="gejala[]" value="poliuria"> Poliuria (Banyak Kencing)<br>
+												<input type="checkbox" name="gejala[]" value="polidipsia"> Polidipsia (Banyak Minum)<br>
+												<input type="checkbox" name="gejala[]" value="polifagia"> Polifagia (Banyak Makan)<br>
 											</div>
 										</div>
 									</div>
@@ -205,12 +203,12 @@ http://www.tooplate.com/view/2102-constructive
 												<b>20</b>
 										</div>
 										<div class="form-group">
-											<label>Penyakit</label>
-											<label></label>
+											<label>Penyakit:</label>
+											<label>Normal</label>
 										</div>
 										<div class="form-group">
 											<label>Saran</label><br>
-											<textarea readonly></textarea>
+											<textarea readonly>Tetap jaga pola hidup sehat & melakukan pengecekan gula darah secara rutin</textarea>
 										</div>
 									</div>
 								</div>
@@ -245,13 +243,6 @@ http://www.tooplate.com/view/2102-constructive
 								</div>
 								<div class="col-md-6 col-sm-12 tm-contact-col">
 									<div class="tm-address-box">
-										<p>Aliquam interdum, nisl sedd faucibus tempor, massa velit laoreet ipsum, et faucibus sapien magna at enim. Suspendisse a dictum tortor.</p>
-										<p>Curabitur venenatis leo in augue convallis, vulputate sollicitudin ex maximus.</p>
-										<address>
-											120-240 Aliquam nec neque augue<br>
-											Suspendisse tincidunt nunc,<br>
-											vitae sagis justo 11000
-										</address>
 									</div>
 								</div>
 							</div>
