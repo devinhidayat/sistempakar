@@ -129,32 +129,20 @@ http://www.tooplate.com/view/2102-constructive
 									<div class="row">
 										<div class="col-md-6">
 											<div class="form-group">
-												<label>Umur</label>
-												<input type="number" name="umur" min="1" class="form-control" required>
+												<label>Nama</label><br>
+												<input type="text" name="nama" required>
 											</div>
 											<div class="form-group">
-												<label>Jenis Kelamin: </label>
-												<select name="gender" class="form-control" style="color: white" required>
-													<option value selected ></option>
-													<option value="Laki-laki">Laki-laki</option>
-													<option value="Perempuan">Perempuan</option>
-												</select>
+												<label>Umur</label><br>
+												<input type="number" name="umur" min="1" required>
 											</div>
 											<div class="form-group">
-												<label>Riwayat Diabetes Melitus Tipe 1</label>
-												<select name="riwayat_dm1" class="form-control" style="color: white" required>
-													<option value selected ></option>
-													<option value="Ada">Ada</option>
-													<option value="Tidak">Tidak</option>
-												</select>
+												<label>Tinggi Badan (m)</label><br>
+												<input type="text" name="tinggi" min="0" required>
 											</div>
 											<div class="form-group">
-												<label>Riwayat Diabetes Melitus Tipe 2</label>
-												<select name="riwayat_dm2" class="form-control" style="color: white" required>
-													<option value selected ></option>
-													<option value="Ada">Ada</option>
-													<option value="Tidak">Tidak</option>
-												</select>
+												<label>Berat Badan (kg)</label><br>
+												<input type="number" name="berat" min="0" required>
 											</div>
 											<div class="form-group">
 												<label>Gejala</label><br>
@@ -163,6 +151,32 @@ http://www.tooplate.com/view/2102-constructive
 												<input type="checkbox" name="gejala[]" value="3"> 3<br>
 												<input type="checkbox" name="gejala[]" value="4"> 4<br>
 												<input type="checkbox" name="gejala[]" value="5"> 5<br>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<label>Jenis Kelamin: </label><br>
+												<select name="gender" required>
+													<option value selected ></option>
+													<option value="Laki-laki">Laki-laki</option>
+													<option value="Perempuan">Perempuan</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<label>Riwayat Diabetes Melitus Tipe 1 (Dalam keluarga)</label>
+												<select name="riwayat_dm1" required>
+													<option value selected ></option>
+													<option value="Ada">Ada</option>
+													<option value="Tidak">Tidak</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<label>Riwayat Diabetes Melitus Tipe 2 (Dalam keluarga)</label>
+												<select name="riwayat_dm2" required>
+													<option value selected ></option>
+													<option value="Ada">Ada</option>
+													<option value="Tidak">Tidak</option>
+												</select>
 											</div>
 										</div>
 									</div>
@@ -176,45 +190,31 @@ http://www.tooplate.com/view/2102-constructive
 					<!-- section 3 -->
 					<section id="tm-section-3" class="tm-section">						
 						<div class="row mb-4">
-							<header class="col-xl-12"><h2 class="tm-text-shadow">Our Company</h2></header>		
+							<header class="col-xl-12"><h2 class="tm-text-shadow">Hasil Diagnosa</h2></header>		
 						</div>
 						<div class="row">
-							<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
-								<div class="media tm-bg-transparent-black tm-border-white">
-									<i class="fab fa-apple tm-icon-circled tm-icon-media"></i>
-									<div class="media-body">
-										<h3>HTML Templates</h3>
-										<p>We provide a variety of templates for you at no cost. Please spread a word about <a href="https://plus.google.com/+tooplate" target="_parent">Tooplate</a> website. Thank you.</p>	
-									</div>
-								</div>
-							</div>	
-							<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
-								<div class="media tm-bg-transparent-black tm-border-white">
-									<i class="fas fa-map-pin mr-4 tm-icon-circled tm-icon-media"></i>	
-									<div class="media-body">
-										<h3>Free Images</h3>
-										<p>Photos by <a href="https://unsplash.com" target="_blank">Unsplash.com</a> website, ac ornare arcu finibus sed. Aenean ultrices nisi sit amet facilisis viverra.</p>	
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
-								<div class="media tm-bg-transparent-black tm-border-white">
-									<i class="fab fa-fly mr-4 tm-icon-circled tm-icon-media"></i>
-									<div class="media-body">
-										<h3>Phasellus eleifend</h3>
-										<p>Phasellus feugiat scelerisque sapien, ac ornare arcu finibus sed. Aenean ultrices nisi sit amet facilisis viverra.</p>		
+							<div class="col-md-6 col-sm-6">
+								<div class="panel panel-primary">
+									<div class="panel-body">
+										<div class="form-group">
+												<label>Nama: </label>
+												<b>Edgar</b>
+										</div>
+										<div class="form-group">
+												<label>Umur: </label>
+												<b>20</b>
+										</div>
+										<div class="form-group">
+											<label>Penyakit</label>
+											<label></label>
+										</div>
+										<div class="form-group">
+											<label>Saran</label><br>
+											<textarea readonly></textarea>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
-								<div class="media tm-bg-transparent-black tm-border-white">
-									<i class="fab fa-linode mr-4 tm-icon-circled tm-icon-media"></i>
-									<div class="media-body">
-										<h3>Phasellus eleifend</h3>
-										<p>Phasellus feugiat scelerisque sapien, ac ornare arcu finibus sed. Aenean ultrices nisi sit amet facilisis viverra.</p>	
-									</div>
-								</div>
-							</div>			          		
 						</div>						               
 					</section>
 
