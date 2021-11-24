@@ -125,7 +125,7 @@ http://www.tooplate.com/view/2102-constructive
 						<div>
 							<header class="mb-4"><h2 class="tm-text-shadow">User Data</h2></header>		            
 							<div class="tm-img-container">
-								<form method="POST" action="" enctype="multipart/form-data">
+								<form method="POST" action="<?php echo base_url('index.php/dashboard_user/tambah_userdata') ?>" enctype="multipart/form-data">
 									<div class="row">
 										<div class="col-md-6">
 											<div class="form-group">
@@ -134,18 +134,16 @@ http://www.tooplate.com/view/2102-constructive
 											</div>
 											<div class="form-group">
 												<label>Umur</label><br>
-												<input type="number" name="umur" min="1" required>
+												<input type="number" step="any" name="umur" min="1" required>
 											</div>
 											<div class="form-group">
 												<label>Tinggi Badan (m)</label><br>
-												<input type="text" name="tinggi" min="0" required>
+												<input type="number" step="any" name="tinggi" min="0" required>
 											</div>
 											<div class="form-group">
 												<label>Berat Badan (kg)</label><br>
-												<input type="number" name="berat" min="0" required>
+												<input type="number" step="any" name="berat" min="0" required>
 											</div>
-										</div>
-										<div class="col-md-6">
 											<div class="form-group">
 												<label>Jenis Kelamin: </label><br>
 												<select name="gender" required>
@@ -154,31 +152,51 @@ http://www.tooplate.com/view/2102-constructive
 													<option value="Perempuan">Perempuan</option>
 												</select>
 											</div>
+										</div>
+										<div class="col-md-6">
 											<div class="form-group">
-												<label>Riwayat Diabetes Melitus Tipe 1 (Dalam keluarga)</label>
-												<select name="riwayat_dm1" required>
+												<label>Riwayat Diabetes Melitus Tipe 1 (Dalam keluarga)</label><br>
+												<select name="dm1" required>
 													<option value selected ></option>
 													<option value="Ada">Ada</option>
 													<option value="Tidak">Tidak</option>
 												</select>
 											</div>
 											<div class="form-group">
-												<label>Riwayat Diabetes Melitus Tipe 2 (Dalam keluarga)</label>
-												<select name="riwayat_dm2" required>
+												<label>Riwayat Diabetes Melitus Tipe 2 (Dalam keluarga)</label><br>
+												<select name="dm2" required>
 													<option value selected ></option>
 													<option value="Ada">Ada</option>
 													<option value="Tidak">Tidak</option>
 												</select>
 											</div>
+											<div class="form-group">bera
+												<label>Poliuria (Banyak Kencing)</label><br>
+												<select name="poliuria" required>
+													<option value selected ></option>
+													<option value="Ya">Ada</option>
+													<option value="Tidak">Tidak</option>
+												</select>
+											</div>
 											<div class="form-group">
-												<label>Gejala</label><br>
-												<input type="checkbox" name="gejala[]" value="poliuria"> Poliuria (Banyak Kencing)<br>
-												<input type="checkbox" name="gejala[]" value="polidipsia"> Polidipsia (Banyak Minum)<br>
-												<input type="checkbox" name="gejala[]" value="polifagia"> Polifagia (Banyak Makan)<br>
+												<label>Polidipsia (Banyak Minum)</label><br>
+												<select name="polidipsia" required>
+													<option value selected ></option>
+													<option value="Ya">Ada</option>
+													<option value="Tidak">Tidak</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<label>Polifagia (Banyak Makan)</label><br>
+												<select name="polifagia" required>
+													<option value selected ></option>
+													<option value="Ya">Ada</option>
+													<option value="Tidak">Tidak</option>
+												</select>
 											</div>
 										</div>
 									</div>
-									<button type="submit" class="btn btn-primary">Simpan</button>
+									<button type="submit" class="btn btn-primary">Submit</button>
 									<button type="reset" class="btn btn-danger">Reset</button>
 								</form>
 							</div>		            		          
@@ -430,6 +448,8 @@ http://www.tooplate.com/view/2102-constructive
 			    });
       		}	      	
 		});
+
+		
 
 		</script>
 	</body>
