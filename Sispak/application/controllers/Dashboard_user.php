@@ -10,7 +10,8 @@ class Dashboard_user extends CI_Controller {
     }
 
     public function index() {
-        $this->load->view('user');
+        $data['tbl_user'] = $this->user->get_data('tbl_user')->result();
+        $this->load->view('user',$data);
     }
 
     public function tambah_userdata() {
@@ -52,7 +53,8 @@ class Dashboard_user extends CI_Controller {
             'dm2'           => $dm2,
             'poliuria'      => $poliuria,
             'polidipsia'    => $polidipsia,
-            'polifagia'     => $polifagia
+            'polifagia'     => $polifagia,
+            'bmi'           => $berat / $tinggi / $tinggi
         );
 
         $this->user->insert_data($data,'tbl_user');

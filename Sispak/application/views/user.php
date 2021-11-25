@@ -208,17 +208,25 @@ http://www.tooplate.com/view/2102-constructive
 						<div class="row mb-4">
 							<header class="col-xl-12"><h2 class="tm-text-shadow">Hasil Diagnosa</h2></header>		
 						</div>
+						<?php foreach($tbl_user as $u) : ?>
 						<div class="row">
 							<div class="col-md-6 col-sm-6">
 								<div class="panel panel-primary">
 									<div class="panel-body">
 										<div class="form-group">
 												<label>Nama: </label>
-												<b>Edgar</b>
+												<b><?php echo $$u->nama ?></b>
 										</div>
 										<div class="form-group">
 												<label>Umur: </label>
-												<b>20</b>
+												<b><?php 
+												if($u->umur > 0 && $u->umur < 15){
+													echo "Young";
+												}
+												else {
+													echo "Adult";
+												}
+												?></b>
 										</div>
 										<div class="form-group">
 											<label>Penyakit:</label>
@@ -231,7 +239,8 @@ http://www.tooplate.com/view/2102-constructive
 									</div>
 								</div>
 							</div>
-						</div>						               
+						</div>
+						<?php endforeach; ?>						               
 					</section>
 
 					<!-- section 4 -->
@@ -449,7 +458,9 @@ http://www.tooplate.com/view/2102-constructive
       		}	      	
 		});
 
-		
+		// if ( window.history.replaceState ) {
+		// 	window.history.replaceState( null, null, window.location.href );
+		// }
 
 		</script>
 	</body>
