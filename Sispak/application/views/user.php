@@ -60,7 +60,7 @@ http://www.tooplate.com/view/2102-constructive
 								</a>
 							</li>
 							<li>
-								<a href="#products" id="tmNavLink2" class="scrolly" data-bg-img="constructive_bg_02.jpg" data-page="#tm-section-2" data-page-type="carousel">
+								<a href="#products" id="tmNavLink2" class="scrolly" data-bg-img="constructive_bg_02.jpg" data-page="#tm-section-2">
 									<i class="fas fa-map tm-nav-fa-icon"></i>
 									<span>User Data</span>
 								</a>
@@ -170,11 +170,11 @@ http://www.tooplate.com/view/2102-constructive
 													<option value="Tidak">Tidak</option>
 												</select>
 											</div>
-											<div class="form-group">bera
+											<div class="form-group">
 												<label>Poliuria (Banyak Kencing)</label><br>
 												<select name="poliuria" required>
 													<option value selected ></option>
-													<option value="Ya">Ada</option>
+													<option value="Ada">Ada</option>
 													<option value="Tidak">Tidak</option>
 												</select>
 											</div>
@@ -182,7 +182,7 @@ http://www.tooplate.com/view/2102-constructive
 												<label>Polidipsia (Banyak Minum)</label><br>
 												<select name="polidipsia" required>
 													<option value selected ></option>
-													<option value="Ya">Ada</option>
+													<option value="Ada">Ada</option>
 													<option value="Tidak">Tidak</option>
 												</select>
 											</div>
@@ -190,7 +190,7 @@ http://www.tooplate.com/view/2102-constructive
 												<label>Polifagia (Banyak Makan)</label><br>
 												<select name="polifagia" required>
 													<option value selected ></option>
-													<option value="Ya">Ada</option>
+													<option value="Ada">Ada</option>
 													<option value="Tidak">Tidak</option>
 												</select>
 											</div>
@@ -208,19 +208,24 @@ http://www.tooplate.com/view/2102-constructive
 						<div class="row mb-4">
 							<header class="col-xl-12"><h2 class="tm-text-shadow">Hasil Diagnosa</h2></header>		
 						</div>
-						<?php foreach($tbl_user as $u) : ?>
+						
+						<?php 
+							if(isset($_POST[])) {
+								$nama=$umur=$tinggi=$berat=$gender=$dm1=$dm2=$poliuria=$polidipsia=$polifagia="";
+							}
+						?>
 						<div class="row">
 							<div class="col-md-6 col-sm-6">
 								<div class="panel panel-primary">
 									<div class="panel-body">
 										<div class="form-group">
 												<label>Nama: </label>
-												<b><?php echo $$u->nama ?></b>
+												<b><?php echo $_POST['nama'] ?></b>
 										</div>
 										<div class="form-group">
 												<label>Umur: </label>
 												<b><?php 
-												if($u->umur > 0 && $u->umur < 15){
+												if($_POST['umur'] > 0 && $_POST['umur'] < 15){
 													echo "Young";
 												}
 												else {
@@ -230,7 +235,22 @@ http://www.tooplate.com/view/2102-constructive
 										</div>
 										<div class="form-group">
 											<label>Penyakit:</label>
-											<label>Normal</label>
+											<label><?php 
+												if($_POST['umur'] > 0 && $_POST['umur'] < 15) {
+													if($_POST['dm1']="Tidak" || $_POST['dm1']="Ada" && $_POST['dm2']="Tidak" || $_POST['dm2']="Ada" && $_POST['poliuria']="Tidak" && $_POST['polidipsia']="Tidak" && $_POST['polifagia']="Tidak") {
+														echo "Normal";
+													}
+													else if($_POST['dm1']="Ada" && $_POST['dm2']="Tidak" && $_POST['poliuria']="Tidak" || $_POST['poliuria']="Ada" && $_POST['polidipsia']="Tidak" || $_POST['polidipsia']="Ada" && $_POST['polifagia']="Tidak" || $_POST['polifagia']="Ada") {
+														echo "Diabetes Melitus Tipe 1";
+													}
+													else if($_POST['dm1']="Tidak" && $_POST['dm2']="Ada" && $_POST['poliuria']="Ada" || $_POST['polidipsia']="Ada" || $_POST['polifagia']="Ada") {
+														echo "Diabetes Melitus Tipe 2";
+													}
+												}
+												else {
+													echo "Error!";
+												}
+											?></label>
 										</div>
 										<div class="form-group">
 											<label>Saran</label><br>
@@ -239,8 +259,7 @@ http://www.tooplate.com/view/2102-constructive
 									</div>
 								</div>
 							</div>
-						</div>
-						<?php endforeach; ?>						               
+						</div>					               
 					</section>
 
 					<!-- section 4 -->

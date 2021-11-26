@@ -10,8 +10,10 @@ class Dashboard_user extends CI_Controller {
     }
 
     public function index() {
-        $data['tbl_user'] = $this->user->get_data('tbl_user')->result();
+        $data['user'] = $this->user->get_data('tbl_user')->result();
         $this->load->view('user',$data);
+        // $data = $this->user->get_data('tbl_user')->result();
+        // $this->load->view('user',["data"=>$data]);
     }
 
     public function tambah_userdata() {
