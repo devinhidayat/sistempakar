@@ -16,32 +16,33 @@ class User extends CI_Model {
 
 <?php
 
-// if($umur="Young") {
-//     if($dm1="Tidak" || $dm1="Ada" && $dm2="Tidak" || $dm2="Ada" && $poliuria="Tidak" && $polidipsia="Tidak" && $polifagia="Tidak") {
-//         $penyakit = "Normal";
-//         echo $penyakit;
+// Rules:
+// if($_POST['umur'] > 0 && $_POST['umur'] < 15) {
+//     if(($_POST['dm1']="Tidak" || $_POST['dm1']="Ada") && ($_POST['dm2']="Tidak" || $_POST['dm2']="Ada") && $_POST['poliuria']="Tidak" && $_POST['polidipsia']="Tidak" && $_POST['polifagia']="Tidak") {
+//         echo "Normal";
 //     }
-//     else if($dm1="Ada" && $dm2="Tidak" && $poliuria="Ada" || $polidipsia="Ada" || $polifagia="Ada") {
-//         $penyakit = "Diabetes Melitus Tipe 1";
-//         echo $penyakit;
+//     if($_POST['dm1']="Ada" && $_POST['dm2']="Tidak" && ($_POST['poliuria']="Tidak" || $_POST['poliuria']="Ada") && ($_POST['polidipsia']="Tidak" || $_POST['polidipsia']="Ada") && ($_POST['polifagia']="Tidak" || $_POST['polifagia']="Ada")) {
+//         echo "Diabetes Melitus Tipe 1";
 //     }
-//     else if($dm1="Tidak" && $dm2="Ada" && $poliuria="Ada" || $polidipsia="Ada" || $polifagia="Ada") {
-//         $penyakit = "Diabetes Melitus Tipe 2";
-//         echo $penyakit;
+//     else if($_POST['dm1']="Tidak" && $_POST['dm2']="Ada" && ($_POST['poliuria']="Tidak" || $_POST['poliuria']="Ada") && ($_POST['polidipsia']="Tidak" || $_POST['polidipsia']="Ada") && ($_POST['polifagia']="Tidak" || $_POST['polifagia']="Ada")) {
+//         echo "Diabetes Melitus Tipe 2";
+//     }
+//     else {
+//         echo "Error";
 //     }
 // }
 // else {
-//     if($dm1="Tidak" || $dm1="Ada" && $dm2="Tidak" || $dm2="Ada" && $poliuria="Tidak" && $polidipsia="Tidak" && $polifagia="Tidak") {
-//         $penyakit = "Normal";
-//         echo $penyakit;
+//     if(($_POST['dm1']="Tidak" || $_POST['dm1']="Ada") && ($_POST['dm2']="Tidak" || $_POST['dm2']="Ada") && $_POST['poliuria']="Tidak" && $_POST['polidipsia']="Tidak" && $_POST['polifagia']="Tidak") {
+//         echo "Normal";
 //     }
-//     else if($dm1="Ada" && $dm2="Tidak" && $poliuria="Ada" || $polidipsia="Ada" || $polifagia="Ada") {
-//         $penyakit = "Diabetes Melitus Tipe 1";
-//         echo $penyakit;
+//     else if($_POST['dm1']="Ada" && $_POST['dm2']="Tidak" && ($_POST['poliuria']="Tidak" || $_POST['poliuria']="Ada") && ($_POST['polidipsia']="Tidak" || $_POST['polidipsia']="Ada") && ($_POST['polifagia']="Tidak" || $_POST['polifagia']="Ada")) {
+//         echo "Diabetes Melitus Tipe 1";
 //     }
-//     else if($dm1="Tidak" && $dm2="Ada" && $poliuria="Ada" || $polidipsia="Ada" || $polifagia="Ada") {
-//         $penyakit = "Diabetes Melitus Tipe 2";
-//         echo $penyakit;
+//     else if($_POST['dm1']="Tidak" && $_POST['dm2']="Ada" && ($_POST['poliuria']="Tidak" || $_POST['poliuria']="Ada") && ($_POST['polidipsia']="Tidak" || $_POST['polidipsia']="Ada") && ($_POST['polifagia']="Tidak" || $_POST['polifagia']="Ada")) {
+//         echo "Diabetes Melitus Tipe 2";
+//     }
+//     else {
+//         echo "Diabetes Melitus Tipe 2";
 //     }
 // }
 

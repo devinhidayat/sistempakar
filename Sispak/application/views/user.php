@@ -210,9 +210,9 @@ http://www.tooplate.com/view/2102-constructive
 						</div>
 						
 						<?php 
-							if(isset($_POST[])) {
-								$nama=$umur=$tinggi=$berat=$gender=$dm1=$dm2=$poliuria=$polidipsia=$polifagia="";
-							}
+							// if(isset($_POST[])) {
+							// 	$nama=$umur=$tinggi=$berat=$gender=$dm1=$dm2=$poliuria=$polidipsia=$polifagia="";
+							// }
 						?>
 						<div class="row">
 							<div class="col-md-6 col-sm-6">
@@ -236,19 +236,41 @@ http://www.tooplate.com/view/2102-constructive
 										<div class="form-group">
 											<label>Penyakit:</label>
 											<label><?php 
-												if($_POST['umur'] > 0 && $_POST['umur'] < 15) {
-													if($_POST['dm1']="Tidak" || $_POST['dm1']="Ada" && $_POST['dm2']="Tidak" || $_POST['dm2']="Ada" && $_POST['poliuria']="Tidak" && $_POST['polidipsia']="Tidak" && $_POST['polifagia']="Tidak") {
-														echo "Normal";
+												if ($_POST['umur'] > 0 && $_POST['umur'] < 15) {
+													if ($_POST['dm1'] == "Ada" && $_POST['dm2'] == "Tidak") {
+														if ($_POST['poliuria'] == "Tidak" && $_POST['polidipsia'] == "Tidak" && $_POST['polifagia'] == "Tidak") {
+															echo "Normal";
+														}
+														else if ($_POST['poliuria'] == "Ada" || $_POST['polidipsia'] == "Ada" || $_POST['polifagia'] == "Ada") {
+															echo "DM Tipe 1";
+														}
 													}
-													else if($_POST['dm1']="Ada" && $_POST['dm2']="Tidak" && $_POST['poliuria']="Tidak" || $_POST['poliuria']="Ada" && $_POST['polidipsia']="Tidak" || $_POST['polidipsia']="Ada" && $_POST['polifagia']="Tidak" || $_POST['polifagia']="Ada") {
-														echo "Diabetes Melitus Tipe 1";
-													}
-													else if($_POST['dm1']="Tidak" && $_POST['dm2']="Ada" && $_POST['poliuria']="Ada" || $_POST['polidipsia']="Ada" || $_POST['polifagia']="Ada") {
-														echo "Diabetes Melitus Tipe 2";
+													else {
+														if ($_POST['poliuria'] == "Tidak" && $_POST['polidipsia'] == "Tidak" && $_POST['polifagia'] == "Tidak") {
+															echo "Normal";
+														}
+														else if ($_POST['poliuria'] == "Ada" || $_POST['polidipsia'] == "Ada" || $_POST['polifagia'] == "Ada") {
+															echo "DM Tipe 2";
+														}
 													}
 												}
 												else {
-													echo "Error!";
+													if ($_POST['dm1'] == "Ada" && $_POST['dm2'] == "Tidak") {
+														if ($_POST['poliuria'] == "Tidak" && $_POST['polidipsia'] == "Tidak" && $_POST['polifagia'] == "Tidak") {
+															echo "Normal";
+														}
+														else if ($_POST['poliuria'] == "Ada" || $_POST['polidipsia'] == "Ada" || $_POST['polifagia'] == "Ada") {
+															echo "DM Tipe 1";
+														}
+													}
+													else {
+														if ($_POST['poliuria'] == "Tidak" && $_POST['polidipsia'] == "Tidak" && $_POST['polifagia'] == "Tidak") {
+															echo "Normal";
+														}
+														else if ($_POST['poliuria'] == "Ada" || $_POST['polidipsia'] == "Ada" || $_POST['polifagia'] == "Ada") {
+															echo "DM Tipe 2";
+														}
+													}
 												}
 											?></label>
 										</div>
