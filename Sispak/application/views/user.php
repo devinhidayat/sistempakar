@@ -239,36 +239,44 @@ http://www.tooplate.com/view/2102-constructive
 												if ($_POST['umur'] > 0 && $_POST['umur'] < 15) {
 													if ($_POST['dm1'] == "Tidak" && $_POST['dm2'] == "Ada") {
 														if ($_POST['poliuria'] == "Tidak" && $_POST['polidipsia'] == "Tidak" && $_POST['polifagia'] == "Tidak") {
-															echo "Normal";
+															$penyakit = "Normal";
+															echo $penyakit;
 														}
 														else if ($_POST['poliuria'] == "Ada" || $_POST['polidipsia'] == "Ada" || $_POST['polifagia'] == "Ada") {
-															echo "Diabetes Melitus Tipe 2";
+															$penyakit = "Diabetes Melitus Tipe 2";
+															echo $penyakit;
 														}
 													}
 													else {
 														if ($_POST['poliuria'] == "Tidak" && $_POST['polidipsia'] == "Tidak" && $_POST['polifagia'] == "Tidak") {
-															echo "Normal";
+															$penyakit = "Normal";
+															echo $penyakit;
 														}
 														else if ($_POST['poliuria'] == "Ada" || $_POST['polidipsia'] == "Ada" || $_POST['polifagia'] == "Ada") {
-															echo "Diabetes Melitus Tipe 1";
+															$penyakit = "Diabetes Melitus Tipe 1";
+															echo $penyakit;
 														}
 													}
 												}
 												else {
 													if ($_POST['dm1'] == "Ada" && $_POST['dm2'] == "Tidak") {
 														if ($_POST['poliuria'] == "Tidak" && $_POST['polidipsia'] == "Tidak" && $_POST['polifagia'] == "Tidak") {
-															echo "Normal";
+															$penyakit = "Normal";
+															echo $penyakit;
 														}
 														else if ($_POST['poliuria'] == "Ada" || $_POST['polidipsia'] == "Ada" || $_POST['polifagia'] == "Ada") {
-															echo "Diabetes Melitus Tipe 1";
+															$penyakit = "Diabetes Melitus Tipe 1";
+															echo $penyakit;
 														}
 													}
 													else {
 														if ($_POST['poliuria'] == "Tidak" && $_POST['polidipsia'] == "Tidak" && $_POST['polifagia'] == "Tidak") {
-															echo "Normal";
+															$penyakit = "Normal";
+															echo $penyakit;
 														}
 														else if ($_POST['poliuria'] == "Ada" || $_POST['polidipsia'] == "Ada" || $_POST['polifagia'] == "Ada") {
-															echo "Diabetes Melitus Tipe 2";
+															$penyakit = "Diabetes Melitus Tipe 2";
+															echo $penyakit;
 														}
 													}
 												}
@@ -276,7 +284,17 @@ http://www.tooplate.com/view/2102-constructive
 										</div>
 										<div class="form-group">
 											<label>Saran</label><br>
-											<textarea readonly>Tetap jaga pola hidup sehat & melakukan pengecekan gula darah secara rutin</textarea>
+											<textarea readonly><?php 
+												if($penyakit == "Diabetes Melitus Tipe 1") {
+													echo "DM1";
+												}
+												else if($penyakit == "Diabetes Melitus Tipe 2") {
+													echo "DM2";
+												}
+												else {
+													echo "Tetap jaga pola hidup sehat & melakukan pengecekan gula darah secara rutin";
+												}
+											?></textarea>
 										</div>
 									</div>
 								</div>
