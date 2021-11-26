@@ -237,12 +237,12 @@ http://www.tooplate.com/view/2102-constructive
 											<label>Penyakit:</label>
 											<label><?php 
 												if ($_POST['umur'] > 0 && $_POST['umur'] < 15) {
-													if ($_POST['dm1'] == "Ada" && $_POST['dm2'] == "Tidak") {
+													if ($_POST['dm1'] == "Tidak" && $_POST['dm2'] == "Ada") {
 														if ($_POST['poliuria'] == "Tidak" && $_POST['polidipsia'] == "Tidak" && $_POST['polifagia'] == "Tidak") {
 															echo "Normal";
 														}
 														else if ($_POST['poliuria'] == "Ada" || $_POST['polidipsia'] == "Ada" || $_POST['polifagia'] == "Ada") {
-															echo "DM Tipe 1";
+															echo "Diabetes Melitus Tipe 2";
 														}
 													}
 													else {
@@ -250,7 +250,7 @@ http://www.tooplate.com/view/2102-constructive
 															echo "Normal";
 														}
 														else if ($_POST['poliuria'] == "Ada" || $_POST['polidipsia'] == "Ada" || $_POST['polifagia'] == "Ada") {
-															echo "DM Tipe 2";
+															echo "Diabetes Melitus Tipe 1";
 														}
 													}
 												}
@@ -260,7 +260,7 @@ http://www.tooplate.com/view/2102-constructive
 															echo "Normal";
 														}
 														else if ($_POST['poliuria'] == "Ada" || $_POST['polidipsia'] == "Ada" || $_POST['polifagia'] == "Ada") {
-															echo "DM Tipe 1";
+															echo "Diabetes Melitus Tipe 1";
 														}
 													}
 													else {
@@ -268,7 +268,7 @@ http://www.tooplate.com/view/2102-constructive
 															echo "Normal";
 														}
 														else if ($_POST['poliuria'] == "Ada" || $_POST['polidipsia'] == "Ada" || $_POST['polifagia'] == "Ada") {
-															echo "DM Tipe 2";
+															echo "Diabetes Melitus Tipe 2";
 														}
 													}
 												}
