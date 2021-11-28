@@ -223,7 +223,7 @@ http://www.tooplate.com/view/2102-constructive
 												<b><?php echo $_POST['nama'] ?></b>
 										</div>
 										<div class="form-group">
-												<label>Umur: </label>
+												<label>Kategori Usia: </label>
 												<b><?php 
 												if($_POST['umur'] > 0 && $_POST['umur'] < 15){
 													echo "Young";
@@ -235,7 +235,7 @@ http://www.tooplate.com/view/2102-constructive
 										</div>
 										<div class="form-group">
 											<label>Penyakit:</label>
-											<label><?php 
+											<label><b><?php 
 												if ($_POST['umur'] > 0 && $_POST['umur'] < 15) {
 													if ($_POST['dm1'] == "Tidak" && $_POST['dm2'] == "Ada") {
 														if ($_POST['poliuria'] == "Tidak" && $_POST['polidipsia'] == "Tidak" && $_POST['polifagia'] == "Tidak") {
@@ -280,19 +280,19 @@ http://www.tooplate.com/view/2102-constructive
 														}
 													}
 												}
-											?></label>
+											?></b></label>
 										</div>
 										<div class="form-group">
 											<label>Saran</label><br>
 											<textarea readonly><?php 
 												if($penyakit == "Diabetes Melitus Tipe 1") {
-													echo "DM1";
+													echo "Suntik insulin, mengatur pola makan yang sehat, serta rajin berolahraga";
 												}
 												else if($penyakit == "Diabetes Melitus Tipe 2") {
-													echo "DM2";
+													echo "Hindari makanan berkadar glukosa tinggi, olaraga secara teratur, menurunkan dan menjaga berat badan ideal, berhenti merokok, kurangi minuman beralkohol, dan melakukan cek gula darah secara rutin.";
 												}
 												else {
-													echo "Tetap jaga pola hidup sehat & melakukan pengecekan gula darah secara rutin";
+													echo "Tetap jaga pola hidup sehat, menjaga berat badan ideal, dan melakukan pengecekan gula darah secara rutin";
 												}
 											?></textarea>
 										</div>
